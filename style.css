@@ -1,0 +1,78 @@
+/* Corps du texte */
+body {
+    background-color: black;
+    margin: 0;
+}
+
+/* Titre */
+header {
+    background-color: rgb(38, 38, 236);
+    border-bottom: 2px solid white;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+}
+
+aside {
+    float: left;
+}
+
+/* La liste (Menu) */
+.menu {
+    margin-top: 0;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: larger;
+}
+
+/* li contenant les sous menus */
+.parent-sous-menu {
+    position: relative;
+}
+
+/* Sous menu caché */
+.sous-menu {
+    position: absolute;
+    top: 0;
+    left: 132px;
+    display: none;
+}
+
+/* Affiche le sous-menu enfant lorsqu'on passe la souris sur le li parent*/
+li:hover .sous-menu {
+    display: block;
+}
+
+.menu, .sous-menu {
+    background-color: rgb(101, 204, 235);
+    padding: 0;
+}
+
+.menu li {
+    padding: 8px 18px;
+    list-style: none;
+}
+
+.menu li:hover {
+    background-color: rgba(249, 253, 0, 0.61);
+}
+
+.sous-menu li:hover {
+    background-color: rgba(249, 253, 0, 0.301);
+}
+
+/* Mise en page du poème */
+article {
+    float: left;
+    margin-left: 15%;
+    margin-top: 50px;
+    padding: 20px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: rgb(38, 38, 236);
+    color: white;
+} 
+article p {
+    white-space: pre;
+}
